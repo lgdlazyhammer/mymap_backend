@@ -1,0 +1,243 @@
+[2015-10-06 17:45:21.318] [ERROR] cheese - [Error: Can't set headers after they are sent.]
+Error: Can't set headers after they are sent.
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:335:11)
+    at ServerResponse.setWriteHeadHeaders (C:\Users\guodong.li\node_modules\express-session\node_modules\on-headers\index.js:80:19)
+    at ServerResponse.writeHead (C:\Users\guodong.li\node_modules\express-session\node_modules\on-headers\index.js:39:36)
+    at C:\Users\guodong.li\node_mall\app\server_route.js:515:17
+    at FSReqWrap.oncomplete (fs.js:95:15)
+[2015-10-06 18:08:57.275] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-06 18:16:51.876] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-06 18:21:17.605] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-08 14:16:59.004] [ERROR] cheese - MongoError: connect ECONNREFUSED
+
+[2015-10-08 14:17:00.814] [ERROR] cheese - MongoError: connect ECONNREFUSED
+
+[2015-10-08 14:17:00.876] [ERROR] cheese - MongoError: connect ECONNREFUSED
+
+[2015-10-08 14:17:00.892] [ERROR] cheese - MongoError: connect ECONNREFUSED
+
+[2015-10-08 14:17:00.891] [ERROR] cheese - MongoError: connect ECONNREFUSED
+
+[2015-10-08 15:59:29.311] [ERROR] cheese - ReferenceError: appName is not defined
+
+[2015-10-08 15:59:29.334] [ERROR] cheese - ReferenceError: appName is not defined
+
+[2015-10-08 15:59:29.344] [ERROR] cheese - ReferenceError: appName is not defined
+
+[2015-10-08 18:02:43.359] [ERROR] cheese - MongoError: connect ECONNREFUSED
+
+[2015-10-08 18:02:45.293] [ERROR] cheese - MongoError: connect ECONNREFUSED
+
+[2015-10-08 18:02:45.308] [ERROR] cheese - MongoError: connect ECONNREFUSED
+
+[2015-10-08 18:02:45.308] [ERROR] cheese - MongoError: connect ECONNREFUSED
+
+[2015-10-08 18:02:45.340] [ERROR] cheese - MongoError: connect ECONNREFUSED
+
+[2015-10-08 18:36:05.594] [ERROR] cheese - ReferenceError: appName is not defined
+
+[2015-10-08 18:36:05.605] [ERROR] cheese - ReferenceError: appName is not defined
+
+[2015-10-08 18:36:05.613] [ERROR] cheese - ReferenceError: appName is not defined
+
+[2015-10-09 09:22:54.816] [ERROR] cheese - MongoError: connect ECONNREFUSED
+
+[2015-10-09 09:22:56.641] [ERROR] cheese - MongoError: connect ECONNREFUSED
+
+[2015-10-09 09:22:56.687] [ERROR] cheese - MongoError: connect ECONNREFUSED
+
+[2015-10-09 09:22:56.720] [ERROR] cheese - MongoError: connect ECONNREFUSED
+
+[2015-10-09 09:22:56.751] [ERROR] cheese - MongoError: connect ECONNREFUSED
+
+[2015-10-09 13:38:51.521] [ERROR] cheese - SyntaxError: Unexpected token _
+
+[2015-10-09 13:41:25.783] [ERROR] cheese - SyntaxError: Unexpected token _
+
+[2015-10-09 13:43:18.431] [ERROR] cheese - SyntaxError: Unexpected token _
+
+[2015-10-09 13:44:12.075] [ERROR] cheese - SyntaxError: Unexpected token _
+
+[2015-10-09 13:45:33.761] [ERROR] cheese - SyntaxError: Unexpected token _
+
+[2015-10-09 13:46:25.528] [ERROR] cheese - SyntaxError: Unexpected token _
+
+[2015-10-09 13:54:14.504] [ERROR] cheese - SyntaxError: Unexpected token _
+
+[2015-10-09 16:55:58.851] [ERROR] cheese - TypeError: undefined is not a function
+
+[2015-10-09 16:57:58.874] [ERROR] cheese - TypeError: undefined is not a function
+
+[2015-10-09 17:04:47.306] [ERROR] cheese - ReferenceError: options is not defined
+
+[2015-10-09 17:04:47.316] [ERROR] cheese - Error: Can't set headers after they are sent.
+
+[2015-10-09 17:04:47.320] [ERROR] cheese - Error: Can't set headers after they are sent.
+
+[2015-10-09 17:06:16.779] [ERROR] cheese - Error: Can't set headers after they are sent.
+
+[2015-10-09 17:06:16.781] [ERROR] cheese - Error: Can't set headers after they are sent.
+
+[2015-10-09 17:08:06.067] [ERROR] cheese - Error: Can't set headers after they are sent.
+
+[2015-10-09 17:45:18.503] [ERROR] cheese - ReferenceError: appName is not defined
+
+[2015-10-09 17:58:40.705] [ERROR] cheese - ReferenceError: err is not defined
+
+[2015-10-11 18:30:11.625] [ERROR] cheese - Error: Can't set headers after they are sent.
+
+[2015-10-12 17:28:07.210] [ERROR] cheese - Error: Can't set headers after they are sent.
+
+[2015-10-16 17:02:26.202] [ERROR] cheese - TypeError: Cannot read property 'path' of undefined
+
+[2015-10-16 18:20:27.285] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-16 18:20:40.050] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-16 18:20:41.443] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-16 18:20:43.151] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-16 18:20:44.128] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-16 18:20:44.387] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-16 18:20:47.247] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-16 18:20:48.920] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-16 18:20:50.292] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-16 18:20:51.409] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-16 18:21:30.835] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-16 18:21:33.634] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-16 18:21:36.068] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-24 10:00:59.565] [ERROR] cheese - TypeError: Cannot read property 'path' of undefined
+
+[2015-10-25 12:14:10.786] [ERROR] cheese - TypeError: Cannot read property 'path' of undefined
+
+[2015-10-25 12:22:20.871] [ERROR] cheese - TypeError: Cannot read property 'path' of undefined
+
+[2015-10-25 13:19:22.447] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-25 13:24:49.476] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-25 13:25:32.294] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-25 13:28:17.667] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-25 13:49:57.090] [ERROR] cheese - Error: Can't set headers after they are sent.
+
+[2015-10-25 13:50:49.055] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-25 13:51:00.581] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-25 14:31:36.036] [ERROR] cheese - Error: Can't set headers after they are sent.
+
+[2015-10-26 13:58:08.441] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-26 13:59:52.293] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-26 14:03:11.689] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-26 14:20:08.778] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-26 14:43:41.328] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-26 14:49:45.170] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-26 14:57:39.232] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-26 14:57:41.569] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-26 14:57:42.163] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-26 14:57:42.683] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-26 14:57:43.450] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-26 14:57:43.621] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-26 14:57:44.103] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-26 14:57:44.443] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-26 15:29:06.670] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-26 15:30:53.271] [ERROR] cheese - TypeError: Cannot read property 'session' of undefined
+
+[2015-10-27 18:46:22.664] [ERROR] cheese - TypeError: Bad input string
+
+[2016-03-14 15:30:12.447] [ERROR] cheese - MongoError: connect ECONNREFUSED 127.0.0.1:27017
+
+[2016-03-14 15:30:13.419] [ERROR] cheese - Error: bind EACCES null:80
+
+[2016-03-14 15:30:13.423] [ERROR] cheese - Error: bind EACCES null:80
+
+[2016-03-14 15:30:13.435] [ERROR] cheese - Error: bind EACCES null:80
+
+[2016-03-14 15:30:13.453] [ERROR] cheese - MongoError: connect ECONNREFUSED 127.0.0.1:27017
+
+[2016-03-14 15:30:13.461] [ERROR] cheese - MongoError: connect ECONNREFUSED 127.0.0.1:27017
+
+[2016-03-14 15:30:13.460] [ERROR] cheese - Error: bind EACCES null:80
+
+[2016-03-14 15:30:13.473] [ERROR] cheese - Error: bind EACCES null:80
+
+[2016-03-14 15:30:13.477] [ERROR] cheese - MongoError: connect ECONNREFUSED 127.0.0.1:27017
+
+[2016-03-14 15:30:13.482] [ERROR] cheese - Error: bind EACCES null:80
+
+[2016-03-14 15:30:13.483] [ERROR] cheese - Error: bind EACCES null:80
+
+[2016-03-14 15:30:13.485] [ERROR] cheese - Error: bind EACCES null:80
+
+[2016-03-14 15:30:13.501] [ERROR] cheese - MongoError: connect ECONNREFUSED 127.0.0.1:27017
+
+[2016-03-14 15:30:13.510] [ERROR] cheese - MongoError: connect ECONNREFUSED 127.0.0.1:27017
+
+[2016-03-14 15:30:13.516] [ERROR] cheese - MongoError: connect ECONNREFUSED 127.0.0.1:27017
+
+[2016-03-14 15:30:13.517] [ERROR] cheese - MongoError: connect ECONNREFUSED 127.0.0.1:27017
+
+[2016-03-14 15:30:13.518] [ERROR] cheese - MongoError: connect ECONNREFUSED 127.0.0.1:27017
+
+[2016-03-22 17:22:40.919] [ERROR] cheese - Error: bind EACCES
+
+[2016-03-22 17:22:40.925] [ERROR] cheese - Error: bind EACCES
+
+[2016-03-22 17:22:40.926] [ERROR] cheese - Error: bind EACCES
+
+[2016-03-22 17:22:40.928] [ERROR] cheese - Error: bind EACCES
+
+[2016-03-22 17:22:40.928] [ERROR] cheese - Error: bind EACCES
+
+[2016-03-22 17:22:40.937] [ERROR] cheese - Error: bind EACCES
+
+[2016-03-22 17:22:40.989] [ERROR] cheese - Error: bind EACCES
+
+[2016-03-22 17:22:40.991] [ERROR] cheese - Error: bind EACCES
+
+[2016-03-22 18:18:58.262] [ERROR] cheese - ReferenceError: THEME is not defined
+
+[2016-03-22 18:20:58.262] [ERROR] cheese - ReferenceError: THEME is not defined
+
+[2016-03-22 18:25:38.880] [ERROR] cheese - ReferenceError: Location is not defined
+
+[2016-03-22 18:26:21.809] [ERROR] cheese - ReferenceError: Location is not defined
+
+[2016-03-22 18:28:15.320] [ERROR] cheese - ReferenceError: THEME is not defined
+
+[2016-03-22 18:30:26.011] [ERROR] cheese - TypeError: undefined is not a function
+
+[2016-03-22 18:32:26.013] [ERROR] cheese - TypeError: undefined is not a function
+
+[2016-03-23 16:36:11.398] [ERROR] cheese - ReferenceError: LocationJson is not defined
+
