@@ -73,7 +73,7 @@ module.exports = function(app){
                                 'Access-Control-Max-Age': 1728000
                                 });
                                 // 数据以json形式返回
-                                var temp = { result:'success', sessionId:encrypted};
+                                var temp = { result:'success', sessionId:encrypted, name:req.session.user.name, personImgUrl:req.session.user.picture };
                                 res.end(JSON.stringify(temp)); 
                                 return;
                             });			
