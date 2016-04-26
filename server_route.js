@@ -419,6 +419,116 @@ module.exports = function(app){
 		}
 	
 	});
+    
+    app.post('/addlocationpictureapi',function(req,res){
+		
+		console.log("here comes to the upload  picture url!");
+		
+		if(!(req.get('Authorization') == null || req.get('Authorization') == '' || req.get('Authorization') == 'off')){
+			
+			console.log("upload person authorization branch.");
+			require('./ciphers_crypt_decrypt.js').decrypt(req.get('Authorization'),function(sessionID){
+					
+				sessionService.getSession(sessionID,function(data){
+					console.log('session----'+data);
+					console.log('session session----'+data[0].session);
+					//console.log('session session user id----'+JSON.parse(data[0].session).user._id);
+					var userId = JSON.parse(data[0].session).user._id;
+					 if(!fs.existsSync(__dirname + "/uploads/"+userId+"/"+req.get('locationid'))){
+						 fs.mkdirSync(__dirname + "/uploads/"+userId+"/"+req.get('locationid'), 0766, function(err){
+						   if(err){ 
+							 console.log(err);
+							 response.send("ERROR! Can't make the directory! \n");    // echo the result back
+						   }
+						 });   
+					 }
+					 
+					//make new save location
+					var newPath = __dirname + "\\uploads\\"+userId+"\\"+req.get('locationid')+"\\"; 
+					 // parse a file upload
+					var form = new formidable.IncomingForm();
+					form.parse(req, function(err, fields, files) {
+						//save the file
+						fs.readFile(files.file.path, function (err, data) {
+					
+							console.log('file location----'+files.file.path);
+							var file_ext = files.file.name;
+							var count = file_ext.lastIndexOf('.');
+							file_ext = file_ext.substring(count,file_ext.length);
+							console.log('file extension----'+file_ext);
+							//get the date and remove the :
+							var date_today = new Date().toJSON();
+							date_today = date_today.replace(":","-");
+							date_today = date_today.replace(":","-");
+							//make new save location
+							newPath = newPath+date_today+file_ext;
+							console.log('the new file path for the user------'+newPath);
+							fs.writeFile(newPath, data, function (err) {
+								if(err != null){
+									res.writeHead(200, { 
+									'Content-Type': 'x-application/json' 
+									}); 
+									// 数据以json形式返回
+									var temp = { result:'fail', error:err };
+									res.end(JSON.stringify(temp));  
+									return;
+								}else{
+                                    
+                                    locationService.findByID(req.get('locationid'),function(DATA){
+                                        console.log("****updating location picurl*****");
+                                        var tempUrl = DATA.picurl;
+                                        if(tempUrl == null || tempUrl == undefined || tempUrl == ''){
+                                            tempUrl = '';
+                                            tempUrl += file_ext;
+                                            
+                                            locationService.updatePicurl(req.get('locationid'), tempUrl, function(err){
+                                                if(err != null ){
+                                                    // 数据以json形式返回
+                                                    var temp = { result:'fail', error:err };
+                                                    res.end(JSON.stringify(temp)); 
+                                                }else{
+                                                    // 数据以json形式返回
+                                                    var temp = { result:'success'};
+                                                    res.end(JSON.stringify(temp)); 
+                                                }
+                                            });
+                                        }else{
+                                            tempUrl += ','+file_ext;
+                                            
+                                            locationService.updatePicurl(req.get('locationid'), tempUrl, function(err){
+                                                if(err != null ){
+                                                    // 数据以json形式返回
+                                                    var temp = { result:'fail', error:err };
+                                                    res.end(JSON.stringify(temp)); 
+                                                }else{
+                                                    // 数据以json形式返回
+                                                    var temp = { result:'success'};
+                                                    res.end(JSON.stringify(temp)); 
+                                                }
+                                            });
+                                        }
+                                        
+                                    });
+									// 数据以json形式返回
+                                    var temp = { result:'success', error:err};
+                                    res.end(JSON.stringify(temp));
+								}
+								
+							});
+						});
+					  
+					});
+				});
+			});
+			
+		}else{
+			console.log('user upload location picture no login.');
+			res.writeHead(200, {'content-type': 'text/plain'});
+			res.write('no login');
+			res.end('');
+		}
+	
+	});
 
 	app.post('/uploadpicture',function(req,res){
 		

@@ -60,6 +60,10 @@ module.exports.findByID = function(ID, CALLBACK){
 	});
 }
 
+module.exports.updatePicurl = function(ID, PICURL, CALLBACK){	
+	LocationModel.update({ _id: ID }, { $set: { picurl: PICURL }}, { multi: true }, function(err){ CALLBACK(err); });
+}
+
 module.exports.remove = function(ID){	
 	LocationModel.remove({ _id: ID }, function (err) {
 	  if (err) return handleError(err);
