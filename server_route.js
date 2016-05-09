@@ -479,7 +479,7 @@ module.exports = function(app){
                                         var tempUrl = DATA.picurl;
                                         if(tempUrl == null || tempUrl == undefined || tempUrl == ''){
                                             tempUrl = '';
-                                            tempUrl += date_today+file_ext;
+                                            tempUrl += "\\uploads\\"+userId+"\\"+req.get('locationid')+"\\"+date_today+file_ext;
                                             
                                             locationService.updatePicurl(req.get('locationid'), tempUrl, function(err){
                                                 if(err != null ){
@@ -493,7 +493,7 @@ module.exports = function(app){
                                                 }
                                             });
                                         }else{
-                                            tempUrl += ','+date_today+file_ext;
+                                            tempUrl += ','+"\\uploads\\"+userId+"\\"+req.get('locationid')+"\\"+date_today+file_ext;
                                             
                                             locationService.updatePicurl(req.get('locationid'), tempUrl, function(err){
                                                 if(err != null ){
